@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4dd88409-28f5-47d5-9159-fd42bc90d118" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Starter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DashBoardFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/EmployersFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrderDetailsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ReportsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SignInFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SuplyersFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/db/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/EmployeeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/ItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/SupplierEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CrudDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/SuperDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/ItemDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/SupplierDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/CustomerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/EmployeeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/ItemDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/SupplierDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SuperService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/SupplierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/ItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/SupplierServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/DaoType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/checklist (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/delivery-man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/economist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-arina-krasnikova-5418891.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-eugenia-remark-5767088-28838760.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-frendsmans-1926769.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-jmendezrf-1536619.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-lum3n-44775-322207.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-nietjuh-934070.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-olly-3755706.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/pexels-olly-994234.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/report.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/supplier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/dash_board_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/employers_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/items_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/login_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/order_details_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/orders_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/reports_form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/sign_in_form_controller.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/supplyers_form.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2n9kKc3DkMRoJ5x4xQBfIuyUdp1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/sharada sir (Java FX)/Textile Store - Java FX",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sharada sir (Java FX)\Textile Store - Java FX\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Textile_Store_Java_FX" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4dd88409-28f5-47d5-9159-fd42bc90d118" name="Changes" comment="" />
+      <created>1728392617832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728392617832</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

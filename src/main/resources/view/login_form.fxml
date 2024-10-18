@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="444.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="469.0" fitWidth="607.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-olly-994234.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="156.0" layoutY="43.0" opacity="0.7" prefHeight="360.0" prefWidth="295.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="41.0" layoutY="14.0" prefHeight="36.0" prefWidth="216.0" text="CLOTHYFY STORE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="93.0" prefHeight="18.0" prefWidth="74.0" text="User name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="169.0" prefHeight="18.0" prefWidth="74.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserName" layoutX="28.0" layoutY="115.0" prefHeight="26.0" prefWidth="242.0" />
+            <JFXTextField fx:id="txtPassWord" layoutX="26.0" layoutY="191.0" prefHeight="26.0" prefWidth="242.0" />
+            <JFXButton buttonType="RAISED" layoutX="121.0" layoutY="253.0" onAction="#btnLogin" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="117.0" layoutY="292.0" onAction="#btnSignin" text="Sign in" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

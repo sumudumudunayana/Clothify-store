@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SuplyersFormController">
+   <children>
+      <ImageView fitHeight="542.0" fitWidth="747.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-olly-994234.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="22.0" layoutY="20.0" opacity="0.7" prefHeight="150.0" prefWidth="694.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="txtSearchSupplierId" layoutX="14.0" layoutY="21.0" style="-fx-background-color: white;" />
+            <JFXButton layoutX="169.0" layoutY="21.0" onAction="#btnSearchSupplier" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Search" />
+            <JFXTextField fx:id="txtSupplierId" layoutX="14.0" layoutY="66.0" promptText="Supplier Id" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtSupplierName" layoutX="185.0" layoutY="66.0" promptText="Supplier Name" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtSupplierCompanyName" layoutX="357.0" layoutY="66.0" promptText="Company Name" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtSupplierContactNumber" layoutX="527.0" layoutY="66.0" promptText="Contact Number" style="-fx-background-color: white;" />
+            <JFXButton layoutX="14.0" layoutY="109.0" onAction="#btnAddSupplier" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Add" />
+            <JFXButton layoutX="131.0" layoutY="109.0" onAction="#btnRemoveSupplier" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Remove" />
+            <JFXButton layoutX="253.0" layoutY="109.0" onAction="#btnUpdateSupplier" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Update" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="21.0" layoutY="205.0" prefHeight="110.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="clmSupplierId" prefWidth="162.39996910095215" text="Supplier Id" />
+          <TableColumn fx:id="clmSupplierName" prefWidth="163.199951171875" text="Supplier Name" />
+            <TableColumn fx:id="clmSupplierCompanyName" prefWidth="165.5999755859375" text="Company Name" />
+            <TableColumn fx:id="clmSupplierContactNumber" prefWidth="205.60000610351562" text="Contact Number" />
+        </columns>
+      </TableView>
+      <TableView layoutX="22.0" layoutY="363.0" prefHeight="110.0" prefWidth="694.0">
+         <columns>
+            <TableColumn fx:id="clmSupplierItemId" prefWidth="159.20001792907715" text="Item Id" />
+            <TableColumn fx:id="clmSupplierItemName" prefWidth="187.20001220703125" text="Name" />
+            <TableColumn fx:id="clmSupplierItemSize" prefWidth="201.59994506835938" text="Size" />
+            <TableColumn fx:id="clmSupplierItemQty" prefWidth="149.60003662109375" text="Qty" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="22.0" layoutY="494.0" onAction="#btnSupplierBack" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

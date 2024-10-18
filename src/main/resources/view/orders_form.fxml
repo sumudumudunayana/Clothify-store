@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersFormController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="835.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-olly-994234.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="28.0" layoutY="27.0" opacity="0.72" prefHeight="246.0" prefWidth="770.0" style="-fx-background-color: black;">
+         <children>
+            <JFXTextField fx:id="txtOrderId" layoutX="22.0" layoutY="26.0" promptText="Order Id" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtEmployeeId" layoutX="22.0" layoutY="72.0" promptText="Employe Id" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtEmployeeName" layoutX="22.0" layoutY="123.0" promptText="Employe Name" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtCustomerName" layoutX="198.0" layoutY="26.0" promptText="Customer Name" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtCopntactNumber" layoutX="198.0" layoutY="72.0" promptText="Contact No" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtCustomerEmail" layoutX="198.0" layoutY="123.0" promptText="E mail" style="-fx-background-color: white;" />
+            <DatePicker fx:id="txtOrderDate" layoutX="22.0" layoutY="176.0" prefHeight="26.0" prefWidth="135.0" promptText="Date" />
+            <JFXComboBox fx:id="txtPaymentMethod" layoutX="198.0" layoutY="176.0" prefHeight="26.0" prefWidth="135.0" promptText="Payment Method" style="-fx-background-color: white;" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="246.0" layoutX="385.0" stroke="BLACK" strokeType="INSIDE" width="17.0" />
+            <JFXTextField fx:id="txtOrderItemId" layoutX="429.0" layoutY="26.0" promptText="Item Id" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtOrderItemName" layoutX="598.0" layoutY="26.0" promptText="Item name" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtOrderItemSize" layoutX="598.0" layoutY="110.0" promptText="Size" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtOrderItemPrice" layoutX="598.0" layoutY="66.0" promptText="Price" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtOrderItemQty" layoutX="429.0" layoutY="109.0" promptText="Qty" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtOrderItemType" layoutX="429.0" layoutY="66.0" promptText="Type" style="-fx-background-color: white;" />
+            <JFXButton layoutX="616.0" layoutY="163.0" onAction="#btnOrderUpdate" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Update" />
+            <JFXButton layoutX="447.0" layoutY="163.0" onAction="#btnOrderSearch" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Search" />
+            <JFXButton layoutX="447.0" layoutY="202.0" onAction="#btnOrderRemove" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Remove Order" />
+            <JFXButton layoutX="616.0" layoutY="202.0" onAction="#btnOrderAdd" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Add To Cart" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="28.0" layoutY="296.0" prefHeight="200.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="clmOrderItemId" prefWidth="120.79996299743652" text="Item Id" />
+          <TableColumn fx:id="clmOrderItemName" prefWidth="148.79998779296875" text="Item Name" />
+            <TableColumn fx:id="clmOrderType" prefWidth="103.199951171875" text="Type" />
+            <TableColumn fx:id="clmOrderSize" prefWidth="86.4000244140625" text="Size" />
+            <TableColumn fx:id="clmOrderQty" prefWidth="82.39999389648438" text="Qty" />
+            <TableColumn fx:id="clmOrderUnitPrice" prefWidth="112.800048828125" text="1 Unit price" />
+            <TableColumn fx:id="clmOrderTotalPrice" prefWidth="124.7999267578125" text="Total price" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="28.0" layoutY="509.0" opacity="0.71" prefHeight="54.0" prefWidth="770.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="31.0" layoutY="18.0" prefHeight="22.0" prefWidth="144.0" text="TOTAL SPENDING :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOrderTotalSpending" layoutX="175.0" layoutY="19.0" text="00.00" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="607.0" layoutY="16.0" onAction="#btnOrderPlace" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Place Order" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="35.0" layoutY="579.0" onAction="#btnOrdersBack" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" text="Back" />
+   </children>
+</AnchorPane>

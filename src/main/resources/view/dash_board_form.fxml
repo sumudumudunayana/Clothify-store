@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="577.0" fitWidth="815.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-olly-994234.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="265.0" layoutY="14.0" prefHeight="58.0" prefWidth="255.0" text="clothify store">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="62.0" layoutY="105.0" opacity="0.85" prefHeight="424.0" prefWidth="661.0" style="-fx-background-color: BLACK;">
+         <children>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="55.0" layoutY="61.0" onAction="#btnItems" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: WHITE;" text="ITEMS">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="55.0" layoutY="182.0" onAction="#btnOrders" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: white;" text="ORDERS">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="55.0" layoutY="297.0" onAction="#btnEmployers" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: white;" text="EMPLOYERS">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="375.0" layoutY="61.0" onAction="#btnSuppliers" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: white;" text="SUPPLIERS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="375.0" layoutY="182.0" onAction="#btnOrderDetails" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: white;" text="ORDER DETAILS">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER_RIGHT" layoutX="375.0" layoutY="297.0" onAction="#btnDetails" prefHeight="58.0" prefWidth="204.0" style="-fx-background-color: white;" text="REPORTS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="66.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/search.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="66.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/order.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="66.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/economist.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="394.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delivery-man.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="394.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/checklist (1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="64.0" layoutX="394.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/report.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

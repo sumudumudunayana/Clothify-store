@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsFormController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="765.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-olly-994234.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="24.0" layoutY="23.0" opacity="0.77" prefHeight="58.0" prefWidth="683.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="21.0" layoutY="16.0" prefHeight="26.0" prefWidth="93.0" text="Ordere Id :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtSearchOrderId" layoutX="115.0" layoutY="17.0" style="-fx-background-color: white;" />
+            <JFXButton layoutX="565.0" layoutY="17.0" onAction="#btnSearchOrderId" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: white;" text="Search">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="24.0" layoutY="152.0" prefHeight="87.0" prefWidth="683.0">
+        <columns>
+          <TableColumn fx:id="clmOrderDetailsOrderId" prefWidth="105.60000610351562" text="Order Id" />
+          <TableColumn fx:id="clmOrderDetailsEmployeId" prefWidth="109.60000610351562" text="Employe Id" />
+            <TableColumn fx:id="clmOrderDetailsDate" prefWidth="94.39996337890625" text="Date" />
+            <TableColumn fx:id="clmOrderDetailsCustomerName" prefWidth="140.800048828125" text="Customer Name" />
+            <TableColumn fx:id="clmOrderDetailsContactNumber" prefWidth="131.99993896484375" text="Contact Number" />
+            <TableColumn fx:id="clmOrderDetailsTotalSpending" prefWidth="101.5999755859375" text="Total Spending" />
+        </columns>
+      </TableView>
+      <TableView layoutX="24.0" layoutY="293.0" prefHeight="200.0" prefWidth="683.0">
+        <columns>
+          <TableColumn fx:id="clmOrderDetailsItemId" prefWidth="109.60003662109375" text="Item Id" />
+          <TableColumn fx:id="clmOrderDetailsItemName" prefWidth="127.199951171875" text="Item Name" />
+            <TableColumn fx:id="clmOrderDetailsType" prefWidth="99.199951171875" text="Type " />
+            <TableColumn fx:id="clmOrderDetailsPrice" prefWidth="86.4000244140625" text="Price" />
+            <TableColumn fx:id="clmOrderDetailsSize" prefWidth="78.4000244140625" text="Size" />
+            <TableColumn fx:id="clmOrderDetailsQty" prefWidth="84.79998779296875" text="Qty" />
+            <TableColumn fx:id="clmOrderDetailsTotal" prefWidth="99.199951171875" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="306.0" layoutY="114.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white;" text="Order Table">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="314.0" layoutY="255.0" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: white;" text="Item Table">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="24.0" layoutY="507.0" onAction="#btnOrderDetailsBack" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: white;" text="Back">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
