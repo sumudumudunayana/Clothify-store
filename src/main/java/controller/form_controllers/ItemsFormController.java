@@ -61,6 +61,16 @@ public class ItemsFormController {
     }
 
     @FXML
+    void btnSearchItem(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnUpdateItem(ActionEvent event) {
+
+    }
+
+    @FXML
     void btnItemBack(ActionEvent event) {
         Stage stage = new Stage();
         try {
@@ -72,14 +82,5 @@ public class ItemsFormController {
 
     }
 
-    @FXML
-    void btnSearchItem(ActionEvent event) {
-
-    }
-
-    @FXML
-    void btnUpdateItem(ActionEvent event) {
-
-    }
 
 }

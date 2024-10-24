@@ -1,6 +1,7 @@
 package util;
 
 import entity.CustomerEntity;
+import entity.EmployeeEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -10,21 +11,23 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class HibernateUtil {
-    private static SessionFactory session = createSession();
+    private static SessionFactory employeeSession = createEmployeeSession();
 
-    private static SessionFactory createSession(){
-        StandardServiceRegistry build = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+
+    private static SessionFactory createEmployeeSession() {
+        StandardServiceRegistry build = new StandardServiceRegistryBuilder()
+                .configure("hibernate.cfg.xml")
+                .build();
 
         Metadata metadata = new MetadataSources(build)
-                .addAnnotatedClass(CustomerEntity.class)
+                .addAnnotatedClass(EmployeeEntity.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();
-
         return metadata.getSessionFactoryBuilder().build();
+    }
+    public static Session getEmployeeSession(){
+        return employeeSession.openSession();
+    }
 
-    }
-    public static Session getSession(){
-        return session.openSession();
-    }
 }

@@ -11,12 +11,18 @@ public class EmployeeController {
     private EmployeeController(){}
 
     public static EmployeeController getInstance() {
+
         return instance==null?instance=new EmployeeController():instance;
     }
 
     public boolean addEmployee(Employee employee){
+
         return employeeService.addEmployee(employee);
     }
 
 
-}
+    public Employee searchEmployeeById(String id){
+
+        return employeeService.searchEmployee(id);
+        }
+    }

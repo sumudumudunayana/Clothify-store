@@ -4,35 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dd88409-28f5-47d5-9159-fd42bc90d118" name="Changes" comment="new commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/SupplierController.java" afterDir="false" />
+    <list default="true" id="4dd88409-28f5-47d5-9159-fd42bc90d118" name="Changes" comment="new commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DashBoardFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/DashBoardFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EmployersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/EmployersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/ItemsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrderDetailsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/OrderDetailsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrdersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/OrdersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ReportsFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/ReportsFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/SignInFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SuplyersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/SuplyersFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/dto_controllers/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/form_controllers/EmployersFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/form_controllers/EmployersFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/EmployeeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/custom/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/custom/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/custom/impl/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/custom/impl/EmployeeDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/custom/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/custom/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/custom/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/custom/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/ServiceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ServiceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/dash_board_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/dash_board_form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DaoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DaoType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/employers_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/employers_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/items_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/items_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/login_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/login_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/order_details_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/order_details_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/orders_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/orders_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/reports_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/reports_form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/sign_in_form_controller.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/sign_in_form_controller.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/supplyers_form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/supplyers_form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/sharada sir (Java FX)/Textile Store - Java FX&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mudun/OneDrive/Desktop/New folder (3)/ClothifyStore",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\sharada sir (Java FX)\Textile Store - Java FX\src\main\resources" />
@@ -104,6 +89,31 @@
       <option name="presentableId" value="Default" />
       <updated>1728392617832</updated>
     </task>
+    <task id="LOCAL-00001" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1729765905568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729765905568</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new commits">
+      <option name="closed" value="true" />
+      <created>1729766139806</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729766139806</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1729777509743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729777509743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,5 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new commit" />
+    <MESSAGE value="new commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commits" />
   </component>
 </project>
