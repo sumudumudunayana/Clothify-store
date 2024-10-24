@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployersFormController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.form_controllers.EmployersFormController">
    <children>
       <ImageView fitHeight="531.0" fitWidth="726.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -63,7 +63,7 @@
             <JFXButton layoutX="512.0" layoutY="161.0" onAction="#btnSearchEmp" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: white;" text="SEARCH" />
          </children>
       </AnchorPane>
-      <TableView layoutX="8.0" layoutY="271.0" prefHeight="200.0" prefWidth="703.0">
+      <TableView fx:id="employeeTable" layoutX="8.0" layoutY="271.0" prefHeight="200.0" prefWidth="703.0">
         <columns>
           <TableColumn fx:id="clmEmpId" prefWidth="75.0" text="ID" />
           <TableColumn fx:id="clmEmpName" prefWidth="75.0" text="Name" />

@@ -1,18 +1,29 @@
-package controller;
+package controller.form_controllers;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
+import dto.Employee;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
+import service.ServiceFactory;
+import service.custom.EmployeeService;
+import util.ServiceType;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class EmployersFormController {
+
+public class EmployersFormController implements Initializable {
 
     @FXML
     private TableColumn<?, ?> clmEmpAccNo;
@@ -42,6 +53,9 @@ public class EmployersFormController {
     private TableColumn<?, ?> clmEmpNic;
 
     @FXML
+    private TableView<Employee> employeeTable;
+
+    @FXML
     private JFXTextField txtAccNo;
 
     @FXML
@@ -68,8 +82,30 @@ public class EmployersFormController {
     @FXML
     private JFXTextField txtNic;
 
+    EmployeeService employeeService = ServiceFactory.getInstance().getServiceType(ServiceType.EMPLOYEE);
+
     @FXML
     void btnAddEmp(ActionEvent event) {
+
+        Employee employee = new Employee(
+          txtEmployeId.getText(),
+          txtEmployeName.getText(),
+          txtDob.getAccessibleText(),
+          txtContactNumber.getText(),
+          txtAddress.getText(),
+          txtAccNo.getText(),
+          txtBranch.getText(),
+          txtNic.getText(),
+          txtGender.getAccessibleText()
+        );
+
+        if (employeeService.addEmployee(employee)){
+            new Alert(Alert.AlertType.INFORMATION,"Employee Added !!").show();
+
+        }else {
+            new Alert(Alert.AlertType.ERROR,"Employee Not Added !!").show();
+        }
+
 
     }
 
@@ -87,7 +123,15 @@ public class EmployersFormController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        loadTable();
+    }
 
+    private void loadTable(){
+        ObservableList<Employee> all = employeeService.getAllEmployees();
+        all.forEach(employee -> {
+            System.out.println(employee);
+        });
+        employeeTable.setItems(all);
     }
 
     @FXML
@@ -100,4 +144,8 @@ public class EmployersFormController {
 
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 }

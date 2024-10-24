@@ -1,5 +1,7 @@
-package controller;
+package controller.form_controllers;
 
+import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,35 +10,25 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ReportsFormController {
+public class SignInFormController {
 
     @FXML
-    void btnAnnualReport(ActionEvent event) {
-
-    }
+    private JFXTextField txtSignInConfirmPassword;
 
     @FXML
-    void btnDailyReport(ActionEvent event) {
-
-    }
+    private JFXTextField txtSignInEmail;
 
     @FXML
-    void btnEmployeeReport(ActionEvent event) {
-
-    }
+    private JFXTextField txtSignInPassword;
 
     @FXML
-    void btnInventoryReport(ActionEvent event) {
-
-    }
+    private JFXTextField txtSignInUserName;
 
     @FXML
-    void btnMonthlyReport(ActionEvent event) {
-
-    }
+    private JFXComboBox<?> txtSignIntYPE;
 
     @FXML
-    void btnReportsBack(ActionEvent event) {
+    void btnSignInBack(ActionEvent event) {
         Stage stage = new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/dash_board_form.fxml"))));
@@ -48,7 +40,7 @@ public class ReportsFormController {
     }
 
     @FXML
-    void btnSupplierReport(ActionEvent event) {
+    void btnSignInRegister(ActionEvent event) {
 
     }
 

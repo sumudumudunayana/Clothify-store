@@ -1,4 +1,4 @@
-package controller;
+package controller.form_controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

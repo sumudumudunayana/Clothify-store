@@ -1,6 +1,5 @@
-package controller;
+package controller.form_controllers;
 
-import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,25 +9,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class SignInFormController {
+public class LoginFormController {
 
     @FXML
-    private JFXTextField txtSignInConfirmPassword;
+    private JFXTextField txtPassWord;
 
     @FXML
-    private JFXTextField txtSignInEmail;
+    private JFXTextField txtUserName;
 
     @FXML
-    private JFXTextField txtSignInPassword;
-
-    @FXML
-    private JFXTextField txtSignInUserName;
-
-    @FXML
-    private JFXComboBox<?> txtSignIntYPE;
-
-    @FXML
-    void btnSignInBack(ActionEvent event) {
+    void btnLogin(ActionEvent event) {
         Stage stage = new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/dash_board_form.fxml"))));
@@ -36,11 +26,18 @@ public class SignInFormController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @FXML
-    void btnSignInRegister(ActionEvent event) {
+    void btnSignin(ActionEvent event) {
+        Stage stage = new Stage();
+        try {
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/sign_in_form_controller.fxml"))));
+            stage.show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
 
