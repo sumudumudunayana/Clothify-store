@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="444.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.form_controllers.LoginFormController">
    <children>
       <ImageView fitHeight="469.0" fitWidth="607.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
@@ -34,8 +33,14 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <JFXTextField fx:id="txtUserName" layoutX="28.0" layoutY="115.0" prefHeight="26.0" prefWidth="242.0" />
-            <JFXTextField fx:id="txtPassWord" layoutX="26.0" layoutY="191.0" prefHeight="26.0" prefWidth="242.0" />
+            <JFXTextField fx:id="txtUserName" focusColor="BLACK" layoutX="28.0" layoutY="115.0" prefHeight="26.0" prefWidth="242.0" unFocusColor="BLACK">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="txtPassWord" layoutX="26.0" layoutY="191.0" prefHeight="26.0" prefWidth="242.0" unFocusColor="BLACK">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextField>
             <JFXButton buttonType="RAISED" layoutX="121.0" layoutY="253.0" onAction="#btnLogin" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="13.0" />

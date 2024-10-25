@@ -25,4 +25,8 @@ public class EmployeeController {
 
         return employeeService.searchEmployee(id);
         }
+
+    public boolean authenticateEmployee(String email, String password) {
+        return false;
     }
+}
