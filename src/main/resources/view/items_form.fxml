@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -17,7 +16,7 @@
             <Image url="@../img/pexels-olly-994234.jpg" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="txtSize" layoutX="31.0" layoutY="35.0" opacity="0.73" prefHeight="187.0" prefWidth="672.0" style="-fx-background-color: black;">
+      <AnchorPane layoutX="31.0" layoutY="35.0" opacity="0.73" prefHeight="187.0" prefWidth="672.0" style="-fx-background-color: black;">
          <children>
             <JFXTextField fx:id="txtItemId" focusColor="BLACK" layoutX="23.0" layoutY="14.0" prefHeight="26.0" prefWidth="150.0" promptText="Item Id" style="-fx-background-color: white;" unFocusColor="BLACK">
                <font>
@@ -39,7 +38,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#0c111e" layoutX="469.0" layoutY="55.0" prefHeight="26.0" prefWidth="150.0" promptText="Size" style="-fx-background-color: white;" unFocusColor="BLACK">
+            <JFXTextField fx:id="txtSize" focusColor="#0c111e" layoutX="469.0" layoutY="55.0" prefHeight="26.0" prefWidth="150.0" promptText="Size" style="-fx-background-color: white;" unFocusColor="BLACK">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -64,10 +63,14 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
-            <JFXComboBox fx:id="txtType" layoutX="23.0" layoutY="56.0" prefHeight="26.0" prefWidth="150.0" promptText="Type" style="-fx-background-color: white;" />
+            <JFXTextField fx:id="txtType" focusColor="#0c111e" layoutX="23.0" layoutY="55.0" prefHeight="26.0" prefWidth="150.0" promptText="Type" style="-fx-background-color: white;" unFocusColor="BLACK">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
          </children>
       </AnchorPane>
-      <TableView layoutX="21.0" layoutY="270.0" prefHeight="200.0" prefWidth="692.0">
+      <TableView fx:id="itemTable" layoutX="21.0" layoutY="270.0" prefHeight="200.0" prefWidth="692.0">
         <columns>
           <TableColumn fx:id="clmItemId" prefWidth="88.79995346069336" text="Item Id" />
           <TableColumn fx:id="clmName" prefWidth="151.20005798339844" text="Name" />

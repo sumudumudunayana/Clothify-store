@@ -1,9 +1,9 @@
 package repository.custom;
 
-import entity.ItemEntity;
+import entity.OrderEntity;
 import javafx.collections.ObservableList;
 import repository.CrudDao;
 
-public interface ItemDao extends CrudDao<ItemEntity> {
+public interface OrderDao extends CrudDao<OrderEntity> {
 
 }
